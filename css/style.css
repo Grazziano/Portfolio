@@ -1,3 +1,10 @@
+body {
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
 .overlay {
     widows: 100%;
     height: 100%;
@@ -59,4 +66,9 @@
 
 .section .row .aboutImage {
     max-width: 100%;
+}
+
+.skillsSection {
+    background-color: #3498db;
+    color: #fff;
 }
