@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $("#slides").superslides({
         animation: 'fade',
         play: 5000,
@@ -35,8 +35,10 @@ $(document).ready(function() {
     });
 
     var skillsTopOffset = $(".skillsSection").offset().top;
+    var statsTopOffset = $(".statsSection").offset().top;
+    var countUpFinish = false;
     // console.log(skillsTopOffset);
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         // console.log(window.pageYOffset);
         if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
 
@@ -47,18 +49,23 @@ $(document).ready(function() {
                 scaleColor: false,
                 lineWidth: 4,
                 size: 152,
-                onStep: function(from, to, percent) {
+                onStep: function (from, to, percent) {
                     $(this.el).find('.percent').text(Math.round(percent));
                 }
             });
 
         }
 
+        if (!countUpFinish && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+            $(".counter").each(function () {
+                var element = $(this);
+                var endVal = parseInt(element.text());
+                element.countup(endVal);
+            });
+
+            countUpFinish = true;
+        }
+
     });
 
-    $(".counter").each(function() {
-        var element = $(this);
-        var endVal = parseInt(element.text());
-        element.countup(endVal);
-    });
 });
