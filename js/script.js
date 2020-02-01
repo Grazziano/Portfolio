@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Web Developer", "PHP", "Laravel", "Student"],
+        strings: ["Web Developer", "PHP", "Laravel", "Java", "Student"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
