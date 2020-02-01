@@ -70,4 +70,13 @@ $(document).ready(function() {
 
     $("[data-fancybox]").fancybox();
 
+    $(".items").isitope({
+        filter: '*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
 });
