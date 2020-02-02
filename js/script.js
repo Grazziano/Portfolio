@@ -70,7 +70,7 @@ $(document).ready(function() {
 
     $("[data-fancybox]").fancybox();
 
-    $(".items").isitope({
+    $(".items").isotope({
         filter: '*',
         animationOptions: {
             duration: 1500,
