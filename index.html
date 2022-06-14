@@ -76,8 +76,11 @@
           <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#downloadResume">Resume</a>
           </li>
           <li class="nav-item">
             <a
@@ -96,31 +99,29 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <img
-              class="aboutImage"
-              src="img/60292620_2156558624461684_6812711201185726464_o.jpg"
-              alt=""
-            />
+            <img class="aboutImage" src="img/profile.jpg" alt="profile" />
           </div>
 
           <div class="col-md-7">
             <h4>Meu nome é Grazziano Fagundes</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              condimentum dignissim vehicula. Cras et turpis sem. Donec felis
-              velit, iaculis sit amet dolor a, ultrices commodo enim. In sodales
-              rhoncus justo at varius. Integer volutpat ullamcorper neque, non
-              cursus nulla mattis eu. Cras rutrum sodales libero, et aliquam
-              lectus vehicula eget. Vivamus eu massa et velit viverra
-              pellentesque non in orci.
+              Olá, eu sou o Grazziano. Eu tenho
+              <span class="currentAge"></span> anos, sou analista de sistemas.
+              Sou brasileiro, nasci em Pelotas - RS, onde vivo atualmente. Minha
+              história com programação começou em 2017, quando entrei no
+              FATEC-SENAC-RS (Faculdade de Tecnologia SENAC de Pelotas - RS),
+              onde me formei em 2019.
             </p>
             <p>
-              Nullam a augue elit. Duis mi nisi, consectetur euismod
-              pellentesque id, maximus porttitor est. Duis pretium tortor nibh,
-              in accumsan sem pretium non. Mauris eget rutrum neque. Sed sem
-              enim, sollicitudin ac cursus in, fringilla sit amet ipsum. Mauris
-              urna odio, tempus et dapibus quis, tincidunt ut ligula. Phasellus
-              purus felis, faucibus non dictum quis, consequat ut risus.
+              Já em fevereiro de 2018 comecei como estagiário no COINPEL
+              (Companhia de Informática de Pelotas), onde fiquei até fevereiro
+              de 2021, dentre as ferramentas que utilizava estavam a linguagem
+              PHP, o framework Laravel e o banco de dados Postgresql.
+            </p>
+            <p>
+              Em Agosto de 2021 entrei para Trybe, onde estudo atualmente
+              desenvolvimento web, dentre as ferramentas que estudo estão
+              Javascript, ReactJS, NodeJS, Typescript, JEST, MySQL.
             </p>
           </div>
         </div>
@@ -238,13 +239,22 @@
       </div>
     </div>
 
-    <div id="contact" class="contactSection section">
+    <!-- <div id="contact" class="contactSection section">
       <div class="col-md-12 text-center">
         <p class="subHeading">Like what you see?</p>
         <h2>I'd love to hear from you!</h2>
         <a href="mailTo:grazzianofagundes@gmail.com" class="contactButton"
           >GET IN TOUCH!</a
         >
+      </div>
+    </div> -->
+    <div id="downloadResume" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">Resume</p>
+        <h2>Download Resume</h2>
+        <a href="./resume/resume.pdf" target="_blank" class="contactButton">
+          DOWNLOAD
+        </a>
       </div>
     </div>
 
@@ -436,6 +446,7 @@
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/typed.min.js"></script>
+    <script src="./js/getAge.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
