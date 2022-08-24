@@ -365,3 +365,23 @@ body {
     height: 100%;
     background: url(../img/loader.gif) center center no-repeat;
 }
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+}
